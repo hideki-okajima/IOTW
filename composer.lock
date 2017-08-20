@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "50eec6732765afd592f66d8656643c21",
+    "packages": [
+        {
+            "name": "ryo-utsunomiya/php-fxxk",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ryo-utsunomiya/php-fxxk.git",
+                "reference": "e3630d8c8178e97f978b8e324ab1e4f33138b1dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ryo-utsunomiya/php-fxxk/zipball/e3630d8c8178e97f978b8e324ab1e4f33138b1dd",
+                "reference": "e3630d8c8178e97f978b8e324ab1e4f33138b1dd",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BrainFuck\\": "lib/BrainFuck/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryo Utsunomiya",
+                    "email": "millionsnowliving+php-fxxk@gmail.com",
+                    "role": "Lead"
+                }
+            ],
+            "description": "An easy-customizable Brainfuck interpreter for PHP",
+            "time": "2017-02-20T05:06:28+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

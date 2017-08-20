@@ -1,0 +1,5 @@
+{
+    "require": {
+        "ryo-utsunomiya/php-fxxk": "^0.2.1"
+    }
+}

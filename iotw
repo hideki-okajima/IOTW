@@ -1,0 +1,42 @@
+#!/usr/bin/php
+<?php
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+use BrainFuck\Mapping;
+use BrainFuck\Language;
+
+// define IOTW
+$iotw = new Mapping([
+    'The',// >
+    'World',// <
+    'Impact',// +
+    'Lock',// -
+    '!',// .
+    '?',// ,
+    'On',// [
+    'Off',// ]
+]);
+
+// check input
+if( $argc == 2 ) {
+    // inport program
+    $filename = $argv[1];
+    $program = file_get_contents($filename);
+} else {
+    // print program "Impact On the World!" 
+    $program = 'ImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactOnTheImpactTheImpactImpactImpactTheImpactImpactImpactImpactImpactImpactImpactTheImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactWorldWorldWorldWorldLockOffTheTheTheImpactImpactImpact!TheImpactImpactImpactImpactImpactImpactImpactImpactImpact!ImpactImpactImpact!LockLockLockLockLockLockLockLockLockLockLockLockLockLockLock!ImpactImpact!ImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactImpact!WorldWorldImpactImpact!TheImpactImpactImpactImpactImpactImpact!TheLockLockLockLockLockLock!WorldWorld!TheTheImpactImpactImpactImpactImpactImpact!LockLockLockLockLockLockLockLockLockLockLockLock!LockLockLock!WorldWorld!TheImpactImpactImpactImpactImpactImpactImpactImpact!TheImpactImpactImpactImpactImpactImpactImpactImpactImpactImpact!ImpactImpactImpact!LockLockLockLockLockLock!LockLockLockLockLockLockLockLock!WorldWorldImpact!WorldImpactImpactImpactImpactImpactImpactImpactImpactImpactImpact!';
+    echo $program . PHP_EOL;
+}
+
+
+// run program with mapping
+$output = Language::withMapping($iotw)->run($program);
+
+// output
+foreach ($output as $char) {
+    echo chr($char);
+}
+echo "\n";
+
+
