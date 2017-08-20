@@ -25,6 +25,10 @@
     chmod +x iotw
     ./iotw
 
+### "Hello World!"
+
+    ImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactOnTheImpactImpactImpactImpactImpactImpactImpactTheImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactTheImpactImpactImpactTheImpactWorldWorldWorldWorldLockOffTheImpactImpact!TheImpact!ImpactImpactImpactImpactImpactImpactImpact!!ImpactImpactImpact!TheImpactImpact!WorldWorldImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactImpactImpact!The!ImpactImpactImpact!LockLockLockLockLockLock!LockLockLockLockLockLockLockLock!TheImpact!The!
+
 ### ファイルから読み込んで実行
 
     ./iotw sample/hello.iotw
