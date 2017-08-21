@@ -20,7 +20,7 @@
 ### インストールと "Impact On the World!"
 
     cd {cloneしたいディレクトリ}
-    git cLone https://github.com/hideki-okajima/IOTW.git
+    git clone https://github.com/hideki-okajima/IOTW.git
     cd IOTW
     chmod +x iotw
     ./iotw
