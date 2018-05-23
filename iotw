@@ -29,14 +29,25 @@ if( $argc == 2 ) {
     echo $program . PHP_EOL;
 }
 
+// check code
+if (preg_match_all("/LOCKON/i", $program) > preg_match_all("/LOCKON CO\.,LTD./i", $program)) {
+    exit ("Syntax error.\n");
+}
 
 // run program with mapping
-$output = Language::withMapping($iotw)->run($program);
+$outputArray = Language::withMapping($iotw)->run($program);
 
 // output
-foreach ($output as $char) {
-    echo chr($char);
+$output = '';
+foreach ($outputArray as $char) {
+    $output .= chr($char);
 }
-echo "\n";
 
+// check output
+if (preg_match_all("/LOCKON/i", $output) > preg_match_all("/LOCKON CO\.,LTD./i", $output)) {
+    exit ("Output contains illegal characters.\n");
+}
+
+// output
+echo $output . "\n";
 
