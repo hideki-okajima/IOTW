@@ -33,6 +33,7 @@ if( $argc == 2 ) {
 if (preg_match_all("/LOCKON/i", $program) > preg_match_all("/LOCKON CO\.,LTD./i", $program)) {
     exit ("Syntax error.\n");
 }
+$program = str_replace("LockOn co.,ltd.", 'LockOn', $program);
 
 // run program with mapping
 $outputArray = Language::withMapping($iotw)->run($program);
